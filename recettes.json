@@ -1,0 +1,89 @@
+[
+  {
+    "recettes":[
+    {"nom":"Saumon mariné minute, crémeux à l'aneth",
+     "aliment":"saumon",
+     "description":"",
+     "image":"",
+     "ingredients":["2 pavés de saumon","4 gouttes d'Aromatique essentiel d'aneth","1 filet d'huile d'olive","1 citron vert","Sel et poivre du moulin","50g de mascarpone","50g de crème fraîche liquide"],
+     "preparation":["Découpez en très fines tranches le saumon et assaisonnez-le avec un peu de fleur de sel. Mélangez et laissez mariner le saumon 20 minutes, au frais en ayant pris soin de le couvrir de film alimentaire.","Après 20 minutes, essuyez les tranches de saumon dans un torchon bien sec pour enlever un maximum d'humidité.","Ajoutez le jus et zeste de citron vert, l'huile d'olive, le poivre du moulin et les 2 gouttes d'Aromatique essentiel d'aneth.Laissez mariner au réfrigérateur une dizaine de minute.","Pendant ce temps, préparez le crémeux en fouettant la mascarpone, la crème fraîche, un peu de sel et les gouttes d'Aromatique essentiel d'aneth. Gardez le mélange souple et crémeux.","Disposez les tranches de saumon marinées dans les assiettes et disposez dessus une quenelle de crémeux à l'aneth."]
+    },
+    {"nom":"Verrine avocat-saumon-boursin",
+    "aliment":"saumon",
+     "description":"",
+     "image":"",
+     "ingredients":["Oeufs de lompe noirs(facultatif)","Citron","Ciboulette","1 citron vert","Sel et poivre du moulin","2 cuilleres a soupe de creme fraiche epaisse","1 tranche de saumon fumé","1 boursin ail et fines herbes","1 avocat"],
+     "preparation":["Écraser l'avocat, le mélanger avec un peu de jus de citron, saler et poivrer. Puis disposer cette purée au fond des verrines.","Mélanger la crème fraîche épaisse avec le boursin. Il faut que cela soit épais et crémeux. Repartir cette préparation au dessus de l'avocat.","Couper le saumon en petits dés puis l'ajouter au dessus de la crème au boursin. Ajouter 1 c à café d'oeuf de lompe.","Décorer avec de la ciboulette. Mettre au frais jusqu'au moment de servir."]
+    },
+    {
+    "nom":"Salade de pâtes au saumon",
+    "aliment":"saumon",
+     "description":"",
+     "image":"",
+     "ingredients":["500g de tagliatelles fraîches","400g de pavés de saumon sans la peau","1 courgette","2 carottes","3 c à s de Mayonnaise","2 tablettes de court-bouillon","Le jus d'un demi-citron","Aneth","Ciboulette","Sel","Poivre du moulin"],
+     "preparation":["Lavez les légumes, épluchez uniquement les carottes, puis taillez de longs rubans avec un couteau économe. Recoupez-les en tagliatelles d'1 cm de largeur.","Faites cuire les pâtes 2 min dans une grande casserole d'eau bouillante salée, ajoutez les tagliatelles de légumes et poursuivez la cuisson 30 secondes. Egouttez-les aussitôt et rincez-les sous l'eau froide.","Portez une casserole d'eau à ébullition avec les 2 tablettes de court-bouillon. Retirez la casserole du feu, plongez les pavés de saumon, couvrez et laissez-les pocher 15 min. Effeuillez-les et réservez au frais.","Lavez, séchez et ciselez finement les herbes en gardant quelques pluches d'aneth pour la décoration.","Préparez la sauce salade en ajoutant à la Mayonnaise de Dijon® Amora le jus de citron, les herbes ciselées et 5 cl d'eau. Fouettez avec une fourchette pour bien incorporer la Mayonnaise.","Au moment de servir, versez les tagliatelles dans un saladier, ajoutez le saumon, nappez de sauce et décorez de pluches d'aneth."]
+    },
+    {
+    "nom":"Poulet au chorizo au Cuisine Companion",
+    "aliment":"poulet",
+     "description":"",
+     "image":"",
+     "ingredients":["800g de filets de poulet","100g de chorizo","1 oignon","2 gousses d'ail","2 c à soupe d'huile d'olive","8 cl de vin blanc sec","250g de tomates cerise en boite (poids net) ou de tomates en boite","1 c à café de Maïzena","1 c à soupe d'origan"],
+     "preparation":["Dans le bol muni du hachoir Ultrablade, versez l'oignon et les gousses d'ail.","Hachez Vitesse 11 pendant 20 secondes.","Remplacez le hachoir Ultrablade par le mélangeur.","Ajoutez l'huile d'olive, le vin blanc. Lancez le programme Mijoté P1, à 130°C, pendant 5 minutes.","Ajoutez le chorizo coupé en dés ainsi que le poulet coupé en gros morceaux.","Ajoutez la Maïzena délayée dans 1 cuillère à café d'eau.","Ajoutez les tomates et leur jus.","Ajoutez l'origan et 1 cuillère à café de sel.","Lancez le programme Mijoté P2, 95°C, pendant 35 minutes.","Servez bien chaud avec du riz basmati par exemple."]
+    },
+    {
+    "nom":"Poulet en croûte de Moutarde et herbes de Provence",
+    "aliment":"poulet",
+     "description":"",
+     "image":"",
+     "ingredients":["1 poulet entier","3 c à s de Moutarde Fine et Forte Amora","Herbes de Provence"],
+     "preparation":["Préchauffer le four à 180°C. Placer le poulet dans un plat allant au four.","Le badigeonner de Moutarde Fine et Forte Amora puis ajouter les herbes de Provence.","Inutile de saler ou poivrer car la Moutarde fait tout l'assaisonnement.","Verser 2 verres d'eau dans le plat puis cuire au four pendant 1heure à 180°C."]
+    },
+    {
+    "nom":"Poulet KFC",
+    "aliment":"poulet",
+     "description":"",
+     "image":"",
+     "ingredients":["1 œuf","Un peu de lait","Sel, poivre","De l'huile pour friteuse","1 c à s de paprika en poudre","1 c à s d'oignon séché","100g de farine","1 c à s d'ail séché","1 c à s d'origan séché","10 pilons de poulet"],
+     "preparation":["Realisez la panure épicée dans un plat en melangeant farine , sel et poivre , ail et oignon séchés origan et paprika en poudre.Dans une assiette profonde , versez le lait et cassez l'oeuf entier, battez le mélange.","Pour avoir une panure bien croustillante, passez les pilons de poulet dans la farine, puis dans le mélange oeuf/lait et de nouveau dans la farine.","Pour la cuisson, faites chauffer l'huile de friture à 160°C. Plongez-y les pilons de poulet 10 à 12 minutes.","Une fois que les pilons sont bien dorés, retirez-les de l'huile en les déposant dans un plat, sur quelques feuilles de papier absorbant pour retirer l'éxcédent d'huile. servez chaud."]
+    },
+    {
+    "nom":"Brochettes de poulet épicées",
+    "aliment":"poulet",
+     "description":"",
+     "image":"",
+     "ingredients":["Des épices à Tajine (ou autres épices)","600g de blanc de volaille (poulet ou dinde)","2 c à s de sauce soja","4 c à s de sauce de sukiyaki ou nuoc mâm","Le jus de 2 citrons verts"],
+     "preparation":["Tailler les blancs de poulet en dés.","Mettre à mariner dans le jus de citron la sauce sukiyaki, la sauce soja et les épices.","Réserver 30 minutes.","Enfiler les dés de volaille sur des brochettes.","Faire griller les brochettes dans une poêle (légèrement huilée) sur un feu vif 4 minutes sur chaque face. Aa marche aussi au barbecue. Server chaud avec de la semoule."]
+    },
+    {
+    "nom":"Croquettes de riz à la mozzarella",
+    "aliment":"riz",
+     "description":"",
+     "image":"",
+     "ingredients":["300g de riz","50 cl de bouillon de légumes","1 oignon haché","2 c à s de beurre","50g de parmesan","100g de mozzarella","Sel, poivre","2 oeufs","50g de farine","100g de chapelure","Huile de friture"],
+     "preparation":["Faites chauffer un faitout avec un peu de beurre.","Une fois le beurre fondu, ajoutez l'oignon haché finement. Laissez cuire sur feu moyen jusqu'à ce que les oignons deviennent translucides.","Versez le riz et enrobez-le avec le beurre et les oignons.","Ajoutez une louche de bouillon de légumes tout en remuant pour que le riz ne s'accroche pas au fond de la casserole. Salez et poivrez. Ajoutez ainsi de suite le bouillon louche après louche jusqu'à la fin de cuisson (environ 20 min). ","Remuez régulièrement.","Retirez la casserole du feu, et ajoutez le de parmesan râpé. Etalez le riz dans un grand plat puis laissez-le complètement refroidir.","Modelez des boules avec le riz.","Creusez chaque boule avec votre pouce afin d'avoir une sorte de petit puits.","Remplissez le trou pratiqué dans chaque boule avec un dé de mozzarella.","Refermez les boules en rajoutant un peu de riz tout en boulant avec la paume de votre main.","Passez les boules dans la farine, dans l'oeuf battu avec le sel et dans la chapelure.","Faites frire dans l'huile bien chaude jusqu'à ce que les croquettes soient dorées.","Egouttez et servez aussitôt. "]
+    },
+    {
+     "nom":"Le Sushi Burger",
+     "aliment":"riz",
+     "description":"",
+     "image":"",
+     "ingredients":["200g de riz rond japonais","50 cl d'eau","4 c à s de vinaigre de riz","2 c à c de sucre","1 c à c de sel","200g de pavé de saumon coupé en lamelles","1 avocat","1 mangue","Un peu de wasabi","Graines de sésame"],
+     "preparation":["Lavez le riz puis placez-le dans une casserole avec l'eau. Couvrir et laissez cuire pendant 15 minutes. Après cuisson, enlevez le couvercle et laissez reposer le riz. Dans un récipient, mélanger le vinaigre, le sel et le sucre. Déposez le riz dans un saladier pour le refroidir. Versez la préparation vinaigrée sur le riz en plusieurs fois, en mélangeant délicatement pour ne pas écraser les grains.","Epluchez l'avocat et coupez-le en lamelles.","Epluchez la mangue et coupez-la en lamelles.","Coupez le saumon en tranches fines.","Déposez un emporte pièce sur une assiette, disposez au fond de l’emporte pièce 3 cuillères à soupe à soupe de riz à sushis. Tassez délicatement.","Disposez ensuite des lamelles d'avocat en une couche.","Faites ensuite une couche de tranches de saumon.","Ajoutez une couche de lamelles de mangue.","Terminez en ajoutant à nouveau du riz à sushis sur le dessus.","Rétirez délicatement l'emporte-pièce et tassez bien le sushi burger.","Saupoudrez de graines de sésame et dégustez le sushi burger avec une pointe de wasabi et de la sauce soja.","Régalez-vous !"]
+    },
+    {"nom":"Chips de risotto aux petits légumes",
+     "aliment":"riz",
+     "description":"",
+     "image":"",
+     "ingredients":["1 courgette","200g de petits pois frais","2 carottes","1 échalote","Huile d'olive","150g de riz Arborio","20 cl de bouillon de légumes","1 sachet de Riz d'or (facultatif)","Du parmesan rapé","De l'huile de pépin de raisin","1 branche de persil"],
+     "preparation":["Dans une sauteuse, verser le riz arborio, le couvrir avec du bouillon.Laisser mijoter.Ajouter le sachet de Riz d'Or.Mouiller de nouveau avec du bouillon. Mélanger très régulièrement. Ajouter peu à peu tout le bouillon. Laisser cuire environ 30 minutes jusqu'à ce que le riz ait une consistance de pâte.Ajouter ensuite le parmesan et laisser encore mijoter 5 minutes.","Mettre le risotto dans le bol du robot, mixer pour obtenir une pâte épaisse.Sur une plaque recouverte de papier sulfurisé, étaler cette pâte de risotto en une couche très fine.Enfourner pour 3h30 à 60°C.","Laver les courgettes, couper les bouts et éplucher une bande sur deux.Faire de même avec les carottes mais les éplucher en entier.Écosser les petits pois.Avec une petite cuillère parisienne (ici j'ai utilisé une toute petite cuillère parisienne de 10mm de diamètre pour avoir vraiment des toutes petites billes), réaliser des billes de légumes.Dans une sauteuse, faire revenir les échalotes émincées dans de l'huile d'olive.Ajouter les légumes et les faire revenir également 2-3minutes en remuant.Ajouter ensuite un peu de bouillon de légumes.Ajouter régulièrement du bouillon.Saler et poivrer. Au bout de 6-7 minutes, goûter les légumes, les carottes doivent être cuites tout en restant croquantes. Si c'est le cas, arrêter la cuisson, sinon laisser encore quelques minutes en ajoutant du bouillon.","Au bout des 3h30, retourner la feuille de papier cuisson sur un plant de travail et décoller délicatement la pâte de la feuille. La pâte est friable donc elle peut se casser mais cela n'est pas grave. Faire chauffer dans une casserole l'huile de pépin de raisin ( 3-4cm de hauteur) avec une branche de persil dedans (le persil évite les projections d'huile).Quand l'huile est à bonne température, plonger les morceaux de pâte de risotto.Le riz va gonfler pour faire du riz soufflé.Sortir les chips, les déposer rapidement sur un rouleau à pâtisserie pour leur donner une forme de chips et les déposer sur du papier absorbant.","Disposer une cuillère de risotto de légumes dans chaque chips et servir idéalement en apéritif ou encore en accompagnement."]
+     },
+    {"nom":"Salade de riz au maïs et poulet",
+     "aliment":"riz",
+     "description":"",
+     "image":"",
+     "ingredients":["150g de riz long grain","200g de poulet cuit coupé en petits morceaux","100g de maïs en grains","2 œufs durs","2 belles tomates","1 ciboule coupée en petits tronçons","4 c à s de Mayonnaise","1 c à s d'oignon rouge haché","2 c à s de persil plat haché","Sel et poivre"],
+     "preparation":["Faire cuire le riz, l'égoutter et le transvaser dans un saladier puis le laisser refroidir à température ambiante.","Incorporer ensuite le maïs, la Mayonnaise de Dijon® Amora, le persil, la ciboule coupée et les morceaux de poulet cuit.","Couper les œufs durs et les tomates en quartiers, les disposer autour de la salade.","Servir aussitôt ou réserver au frais."]
+     }]
+  }
+]

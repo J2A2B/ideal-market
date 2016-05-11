@@ -1,0 +1,16 @@
+{
+	recettes:[
+		{nom:"mariné a l'annette",
+		 image:"",
+		 ingredients:["2 pavé de saumon","2 gouttes d'arome d'annette","1 citron verts","sel et poivre","filet d'huile d'olive"],
+		 preparation:["etape 1","etpe 2","etape 3","etape 4","etape 5"],
+		},
+		{},
+		{},
+		{},
+		{},
+
+	
+
+	]
+}

@@ -1,0 +1,16 @@
+
+
+<div ng-model='produitChoisi'>
+	
+		  <p>Produit : {{produit.product.product_name}}</p>
+		  <p>Quantité: {{produit.product.quantity}}</p>
+		  <p>Matière grasse : {{produit.product.nutriments.fat}}</p>
+		  <p>Sucre : {{produit.product.nutriments.sugars}}</p>
+		  <p>Sel : {{produit.product.nutriments.salt}}</p>   
+</div>
+
+<div ng-repeat="recette in recettesChoisi">
+	<p>{{recette.nom}}</p>
+	
+
+</div>
