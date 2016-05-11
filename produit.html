@@ -1,16 +1,24 @@
 
+<section>
+	<div ng-model='produitChoisi'>
+		<div class="product_top">
+			<div class="img_product">
+			</div>
+			<div class="info_product">
+				  <h2>Produit : {{produit.product.product_name}}</h2>
+				  <p>Quantité: {{produit.product.quantity}}</p>
+				  <p>Matière grasse : {{produit.product.nutriments.fat}}</p>
+				  <p>Sucre : {{produit.product.nutriments.sugars}}</p>
+				  <p>Sel : {{produit.product.nutriments.salt}}</p>
+			</div>
+		</div>   
+	</div>
 
-<div ng-model='produitChoisi'>
-	
-		  <p>Produit : {{produit.product.product_name}}</p>
-		  <p>Quantité: {{produit.product.quantity}}</p>
-		  <p>Matière grasse : {{produit.product.nutriments.fat}}</p>
-		  <p>Sucre : {{produit.product.nutriments.sugars}}</p>
-		  <p>Sel : {{produit.product.nutriments.salt}}</p>   
-</div>
-
-<div ng-repeat="recette in recettesChoisi">
-	<p>{{recette.nom}}</p>
-	
-
-</div>
+	<div ng-repeat="recette in recettesChoisi" class="recipe">
+		<div class="img_recipe"></div>
+			<div class="info_recipe">
+				<p>{{recette.nom}}</p>
+			</div>
+	</div>
+	<button>VIEW MORE</button>
+</section>

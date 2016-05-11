@@ -28,7 +28,7 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
               //affichage de la liste de la desc.
               //console.log(response.data.product._keywords);
               var descriptionAliment = response.data.product._keywords;
-              
+              console.log(descriptionAliment)
 
               //parcour de la description si on trouve des recette avec l'aliment selectionné.
               for(var aliment in descriptionAliment){
@@ -43,7 +43,7 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
               //affichage de mon produit . 
               console.log(monProduit);
               $scope.produit = response.data;
-                
+                console.log($scope.produit)
                 //http pour parcontre le json avec les menus
                   $http.get('recettes.json').then(function(responseJson){
                       //liste toutes recettes
