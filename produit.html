@@ -15,8 +15,9 @@
 	</div>
 
 	<div ng-repeat="recette in recettesChoisi" class="recipe">
-		<div class="img_recipe"></div>
-			<div class="info_recipe">
+		
+			<img ng-src= "{{recette.image}}" style="background-size: cover" class="img_recipe">
+					<div class="info_recipe">
 				<p>{{recette.nom}}</p>
 			</div>
 	</div>
