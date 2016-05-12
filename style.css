@@ -18,9 +18,14 @@ body{
 	flex-direction: column;
 	align-items: center;
 }
+.screen{
+	height: 60px;
+	padding-left: 5px;
+	opacity: 0;
+}
 .scan{
 
-	background: url(img/ScanLogo.svg) ;
+	background: url(img/images/logo_icon/ScanLogo.svg) ;
 	background-size: cover;
 	height: 200px;
 	width: 200px;
@@ -30,6 +35,7 @@ body{
 	line-height: 200px;
 	font-size: 32px;
 }
+.scan p { margin: -200px; }
 
 .recherche input {
 	background-color: rgba(48, 38, 37, 0.16);
