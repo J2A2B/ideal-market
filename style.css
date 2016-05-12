@@ -1,5 +1,5 @@
 /*partie walid*/
-body{	
+body{
 	height: 640px;
 	width:100%;
 	background-color: #302625;
@@ -68,7 +68,7 @@ section{
 	}
 
 			.img_product{
-				
+
 				background-size: cover;
 				height: 105px;
 				width: 40%;
@@ -162,15 +162,13 @@ aux dimensions d'un iphone histoire de ne pas
 être forcer par l'utilisation de la vue adaptive sur firefox*/
 .container-m {
 	overflow-y: scroll;
-	overflow-x:hidden; 
+	overflow-x:hidden;
 	height: 640px;
 	width: 360px !important;
 	margin: 40px auto;
 	color: #302625 !important;
 	background-image: url('halftone.png'),linear-gradient(#fcfbf3,#fcfbf3);
-	
-}
-#search {
+
 }
 
 section#produit > a{
@@ -228,17 +226,21 @@ section#recipe {
 .header-recipe  {
 	height: 200px !important;
 	background-color: red;
-	position: relative;
+	position: absolute;
+	left: 0; right: 0; top: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
 
+}
+#name-recipe {
+	padding-top:  200px;
+}
 #separation{
 	width: 250px;
 	left: 50%;
 	transform: translateX(-50%);
 	position: absolute;
-	border-top: solid #383433 0.5px; 
+	border-top: solid #383433 0.5px;
 }
 
 #name-recipe {
