@@ -96,6 +96,8 @@ $scope.goToRecipe = function(recetteDeFin){
   //Initialisation du tableau qui récupère le tableau compris dans l'objet
   $scope.recetteaAfficher = [];
   $scope.recetteaAfficher.push(recetteDeFin.ingredients);
+  $scope.etapesaAfficher = [];
+  $scope.etapesaAfficher.push(recetteDeFin.preparation);
 
 
   $location.path('/recipe')

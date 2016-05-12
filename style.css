@@ -17,6 +17,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding:80px;
 }
 .screen{
 	height: 60px;
@@ -203,6 +204,12 @@ section#produit > a{
 section#recipe ul,li{
 	list-style: none;
 }
+
+section#recipe ul h3{
+	font-size: 14px;
+	color: #EE5926;
+}
+
 section#recipe ul {
 	margin: 0;
 	padding: 0;
@@ -211,14 +218,14 @@ section#recipe ul {
 }
 section#recipe li {
 	line-height: 1.5;
-	font-size: 18px;
+	font-size: 12px;
 }
 section#recipe {
 	text-align: left;
 	position: relative;
 }
 .header-recipe  {
-	height: 150px;
+	height: 200px;
 	background-color: red;
 	position: relative;
 	background-repeat: no-repeat;
