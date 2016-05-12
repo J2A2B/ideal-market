@@ -1,17 +1,17 @@
 /*partie walid*/
 body{
-	height: 100%
+	height: 100%;
 	width:100%;
+	background-color: #302625;
 }
 *{
-
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 }
 
 .container{
-	background-color: #222222;
-	height: 100vh;
+	height: 100%;
 }
 .searchContainer{
 	display: flex;
@@ -19,7 +19,7 @@ body{
 	align-items: center;
 }
 .scan{
-	
+
 	background: url(img/ScanLogo.svg) ;
 	background-size: cover;
 	height: 200px;
@@ -28,20 +28,15 @@ body{
 	margin-top: 100px;
 	text-align: center;
 	line-height: 200px;
-	color: white;
 	font-size: 32px;
 }
-.recherche{
-	
-}
-.recherche button,input {
-	border-radius: 0px;
-}
-.recherche button,input {
-	background-color: rgba(255,255,255,0.16);
-	color: white;
-	border: 1px solid white;
-	padding: 5px 15px;
+
+.recherche input {
+	background-color: rgba(48, 38, 37, 0.16);
+	color: #888;
+	border: 1px solid #888;
+	padding: 10px 25px 10px 5px;
+	font-size: 15px;
 }
 
 p{color: white;}
@@ -60,9 +55,10 @@ section{
 	position: relative;
 }
 
-	.product_top{	
+	.product_top{
 		display: flex;
 		margin-bottom: 20px;
+		flex: 1;
 	}
 
 			.img_product{
@@ -76,10 +72,10 @@ section{
 				background-color: #d8d8d8;
 				display: flex;
 				flex-direction: column;
-				
+
 				width: 60%;
 				padding-top:5px;
-				padding-left: 5px; 
+				padding-left: 5px;
 			}
 
 				.info_product p{
@@ -97,7 +93,7 @@ section{
 				.product_text{
 				display: flex;
 				flex-direction: column;
-	
+
 				}
 
 					.info_product p{
@@ -107,17 +103,20 @@ section{
 		.recipe{
 		display: flex;
 		width: 100%;
-		height: 80px;
+		height: 100px;
 		margin-top: 10px;
+		background-color: #fff;
+		padding: 15px 20px;
+		cursor: pointer;
 		}
+
 
 			.img_recipe{
 			background-color: #d8d8d8;
 			height: 65px;
 			width: 65px;
 			border-radius: 50%;
-			margin: auto;
-			margin:5px;
+
 			}
 
 			.info_recipe{
@@ -126,11 +125,11 @@ section{
 			flex-grow: 1;
 			justify-content: center;
 			width: 50%;
-			border-bottom: 1px solid #d8d8d8;
+
 			}
-			
+
 				.info_recipe h2, p{
-				margin: 2px;
+				margin-left: 20px;
 				color: black;
 				}
 
@@ -150,3 +149,80 @@ section{
 		}
 
 
+/*Partie Mehdi*/
+/*360×640*/
+/*J'ai préféré mettre un container général
+aux dimensions d'un iphone histoire de ne pas
+être forcer par l'utilisation de la vue adaptive sur firefox*/
+.container-m {
+	height: 640px;
+	width: 360px !important;
+	margin: 40px auto;
+	color: #302625 !important;
+	background-image: url('halftone.png'),linear-gradient(#fcfbf3,#fcfbf3);
+	overflow: hidden;
+}
+#search {
+}
+
+section#produit > a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 15px 25px;
+	background-color: #EE5926;
+	border-radius: 2px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-top: 15px;
+	transition: box-shadow 0.3s ease;
+}section#produit > a:hover {
+
+	box-shadow: 0 0 5px #EE5926;
+}
+.recipe {
+	transition: all 0.2s ease-in-out;
+}
+.recipe:hover {
+	box-shadow: 0 0 3px rgba(48, 38, 37, 0.3);
+	transform: scale(1.1);
+}
+
+/*.recipe:hover > * {
+	transform: translateX(5px);
+	transition: all 0.4s ease-out;
+}*/
+
+section#recipe ul,li{
+	list-style: none;
+}
+section#recipe ul {
+	margin: 0;
+	padding: 0;
+	padding: 20px;
+
+}
+section#recipe li {
+	line-height: 1.5;
+	font-size: 18px;
+}
+section#recipe {
+	text-align: left;
+	position: relative;
+}
+.header-recipe  {
+	height: 150px;
+	background-color: red;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#name-recipe {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bolder;
+	margin-left: 0;
+}

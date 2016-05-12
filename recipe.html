@@ -1,0 +1,17 @@
+<section class="container-m" id="recipe">
+  <div class="header-recipe" ng-style="{ 'background-image': 'url(' + imgRecette + ')'}">
+  </div>
+  <p id="name-recipe">{{nomRecette}}</p>
+<ul>
+  <li ng-repeat="item in recetteaAfficher">
+    <ul>
+      <li ng-repeat="i in item">{{i}}</li>
+    </ul>
+  </li>
+</ul>
+</section>
+<!-- Ici, je loop d'abord sur un tableau comprenant le tableau
+des ingrédients puis enfin je loop de nouveau sur le contenu du tableau nesté
+
+[["un","deux","trois"]]
+"un", "deux", "trois" -->
