@@ -248,3 +248,19 @@ section#recipe {
 	font-weight: bolder;
 	margin-left: 0;
 }
+nav{
+	display: flex;
+	flex-direction: space-between;
+	position: fixed;
+	width: 360px;
+	background-color: black;
+	height: 50px;
+	bottom: 89px;
+}
+
+
+.menu_left {
+	height: 40px;	
+	width: 40px;
+}
+
