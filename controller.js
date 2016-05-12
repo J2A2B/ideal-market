@@ -91,6 +91,7 @@ $http.get('recettes.json')
 
 $scope.goToRecipe = function(recetteDeFin){
   // console.log(recetteDeFin.nom);
+  console.log(recetteDeFin);
   $scope.imgRecette = recetteDeFin.image;
   $scope.nomRecette = recetteDeFin.nom;
   //Initialisation du tableau qui récupère le tableau compris dans l'objet
@@ -99,10 +100,44 @@ $scope.goToRecipe = function(recetteDeFin){
   //Ajout des éttaaaaaaapes
   $scope.etapesaAfficher = [];
   $scope.etapesaAfficher.push(recetteDeFin.preparation);
-  console.log(recetteDeFin.preparation.length);
+  // console.log(recetteDeFin.preparation.length);
  //numerotation des etapes
-  $scope.etapesNumber = recetteDeFin.preparation.length;
+  // $scope.etapesNumber = recetteDeFin.preparation.length;
   $location.path('/recipe')
+
+}
+
+
+$scope.goToTheNextSlide = function(){
+  if(i < 3){
+      if(i == -1){
+        nextSlide = i + 1;
+        tl.to(divs[nextSlide],0.2, {right:0})
+        i++;
+      } else {
+        nextSlide = i + 1;
+        tl.to(divs[nextSlide-1],0.6,{left:"-100%",ease: Power4.easeOut})
+        tl.to(divs[nextSlide],0.6,{right:0,ease: Power4.easeOut},"-=0.6")
+        i++
+      }
+  }
+
+  if(i  == 3){
+    i++;
+    // tl.set(divs[0],{opacity: 0})
+    // tl.set(divs,{right:'-100%',left:0})
+    // tl.to(divs[0],0.3,{opacity:1,delay:0.4})
+
+    // i = -1;
+  }
+  if(i == 4){
+    tl.set(divs[0],{zIndex: 5555,opacity:0})
+
+    tl.set(divs,{right:'-100%',left:0})
+    tl.to(divs[0],0.3,{opacity:1})
+
+    i = -1;
+  }
 
 }
  }]); //fin controller
