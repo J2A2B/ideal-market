@@ -1,5 +1,5 @@
 
-<section>
+<section class="container-m" id="produit">
 	<div ng-model='produitChoisi'>
 		<div class="product_top">
 			<div class="img_product">
@@ -11,15 +11,18 @@
 				  <p>Sucre : {{produit.product.nutriments.sugars}}</p>
 				  <p>Sel : {{produit.product.nutriments.salt}}</p>
 			</div>
-		</div>   
+		</div>
 	</div>
 
 	<div ng-repeat="recette in recettesChoisi" class="recipe">
-		
+
 			<img ng-src= "{{recette.image}}" style="background-size: cover" class="img_recipe">
-					<div class="info_recipe">
+				<div class="info_recipe" ng-click="goToRecipe(recette)">
 				<p>{{recette.nom}}</p>
-			</div>
+				</div>
+
+
+
 	</div>
-	<button>VIEW MORE</button>
+	<a href="">Plus de recettes</a>
 </section>
