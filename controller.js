@@ -18,7 +18,7 @@ app.config(['$routeProvider',function($routeProvider){
 app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$location) {
 
   $scope.rechercherProduit = function(maRoute,codeProduit){
-  console.log(codeProduit);
+  // console.log(codeProduit);
   $location.path(maRoute);
   var monProduit;
   var monCodeProduit = codeProduit;
@@ -30,7 +30,7 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
               //affichage de la liste de la desc.
               //console.log(response.data.product._keywords);
               var descriptionAliment = response.data.product._keywords;
-              console.log(descriptionAliment)
+              // console.log(descriptionAliment)
 
               //parcour de la description si on trouve des recette avec l'aliment selectionné.
               for(var aliment in descriptionAliment){
@@ -43,9 +43,9 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
               }
 
               //affichage de mon produit .
-              console.log(monProduit);
+              // console.log(monProduit);
               $scope.produit = response.data;
-                console.log($scope.produit)
+                // console.log($scope.produit)
                 //http pour parcontre le json avec les menus
                   $http.get('recettes.json').then(function(responseJson){
                       //liste toutes recettes
@@ -59,12 +59,12 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
                       {
                         if(monProduit == listeDesRecettes[recette].aliment)
                         {
-                        console.log(listeDesRecettes[recette]);
+                        // console.log(listeDesRecettes[recette]);
                         recettesChoisi.push(listeDesRecettes[recette]);
                         }
                       }
                       $scope.recettesChoisi = recettesChoisi;
-                      console.log(recettesChoisi[0].imageAliment);
+                      // console.log(recettesChoisi[0].imageAliment);
                       $scope.imageAliment = recettesChoisi[0].imageAliment;
 
                   });//fin http pour mon fichier json
@@ -90,17 +90,54 @@ $http.get('recettes.json')
  // cette fonction récupère l'objet sur laquelle elle est appeléé
 
 $scope.goToRecipe = function(recetteDeFin){
-  console.log(recetteDeFin.nom);
+  // console.log(recetteDeFin.nom);
+  console.log(recetteDeFin);
   $scope.imgRecette = recetteDeFin.image;
   $scope.nomRecette = recetteDeFin.nom;
   //Initialisation du tableau qui récupère le tableau compris dans l'objet
   $scope.recetteaAfficher = [];
   $scope.recetteaAfficher.push(recetteDeFin.ingredients);
+  //Ajout des éttaaaaaaapes
   $scope.etapesaAfficher = [];
   $scope.etapesaAfficher.push(recetteDeFin.preparation);
-
-
+  // console.log(recetteDeFin.preparation.length);
+ //numerotation des etapes
+  // $scope.etapesNumber = recetteDeFin.preparation.length;
   $location.path('/recipe')
+
+}
+
+
+$scope.goToTheNextSlide = function(){
+  if(i < 3){
+      if(i == -1){
+        nextSlide = i + 1;
+        tl.to(divs[nextSlide],0.2, {right:0})
+        i++;
+      } else {
+        nextSlide = i + 1;
+        tl.to(divs[nextSlide-1],0.6,{left:"-100%",ease: Power4.easeOut})
+        tl.to(divs[nextSlide],0.6,{right:0,ease: Power4.easeOut},"-=0.6")
+        i++
+      }
+  }
+
+  if(i  == 3){
+    i++;
+    // tl.set(divs[0],{opacity: 0})
+    // tl.set(divs,{right:'-100%',left:0})
+    // tl.to(divs[0],0.3,{opacity:1,delay:0.4})
+
+    // i = -1;
+  }
+  if(i == 4){
+    tl.set(divs[0],{zIndex: 5555,opacity:0})
+
+    tl.set(divs,{right:'-100%',left:0})
+    tl.to(divs[0],0.3,{opacity:1})
+
+    i = -1;
+  }
 
 }
  }]); //fin controller
