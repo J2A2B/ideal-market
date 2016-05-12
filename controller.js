@@ -107,37 +107,21 @@ $scope.goToRecipe = function(recetteDeFin){
 
 }
 
+$scope.back = function(){
+   $scope.chemin = $location.$$url;
+  if ($scope.chemin == "/produit") {
+      $location.path("/search");
+    }else{
+      $location.path("/produit");
+    }
 
-$scope.goToTheNextSlide = function(){
-  if(i < 3){
-      if(i == -1){
-        nextSlide = i + 1;
-        tl.to(divs[nextSlide],0.2, {right:0})
-        i++;
-      } else {
-        nextSlide = i + 1;
-        tl.to(divs[nextSlide-1],0.6,{left:"-100%",ease: Power4.easeOut})
-        tl.to(divs[nextSlide],0.6,{right:0,ease: Power4.easeOut},"-=0.6")
-        i++
-      }
-  }
+ 
+console.log($location.$$url)
+}
+$scope.backScan = function(){
 
-  if(i  == 3){
-    i++;
-    // tl.set(divs[0],{opacity: 0})
-    // tl.set(divs,{right:'-100%',left:0})
-    // tl.to(divs[0],0.3,{opacity:1,delay:0.4})
-
-    // i = -1;
-  }
-  if(i == 4){
-    tl.set(divs[0],{zIndex: 5555,opacity:0})
-
-    tl.set(divs,{right:'-100%',left:0})
-    tl.to(divs[0],0.3,{opacity:1})
-
-    i = -1;
-  }
+  $location.path("/");
 
 }
+
  }]); //fin controller
