@@ -2,7 +2,7 @@
 body{
 	height: 640px;
 	width:100%;
-	background-color: #302625;
+	background-color: #a7a6a4;
 }
 *{
 	box-sizing: border-box;
@@ -36,10 +36,12 @@ body{
 	line-height: 200px;
 	font-size: 32px;
 }
-.scan p { margin: -200px; }
+.scan p {
+color: white;
+ margin: -200px; }
 
 .recherche input {
-	background-color: rgba(48, 38, 37, 0.16);
+	background-color: white;
 	color: #888;
 	border: 1px solid #888;
 	padding: 10px 25px 10px 5px;
@@ -171,22 +173,13 @@ aux dimensions d'un iphone histoire de ne pas
 
 }
 
-section#produit > a{
-	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	margin: 0 auto;
-	padding: 15px 25px;
-	background-color: #EE5926;
-	border-radius: 2px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	margin-top: 15px;
-	transition: box-shadow 0.3s ease;
-}section#produit > a:hover {
 
-	box-shadow: 0 0 5px #EE5926;
+.container-m#search {
+	background-color: #383433 !important;
+	background-image: none;
 }
+
+
 .recipe {
 	transition: all 0.2s ease-in-out;
 }
@@ -250,3 +243,35 @@ section#recipe {
 	font-weight: bolder;
 	margin-left: 0;
 }
+nav{
+	
+	
+	position: fixed;
+	width: 360px;
+	background-color: #383433;
+	height: 50px;
+	bottom: 89px;
+}
+
+
+.menu_left {
+	position: relative;
+	left: 10px;
+	top: 10px;
+	height: 30px;	
+	width: 30px;
+}
+.menu_right {
+	position: relative;
+	top: 10px;
+	left:285px;
+	height: 30px;	
+	width: 30px;
+}
+
+.container-m::-moz-scrollbar-thumb{
+	background-color: red;
+}
+.container-m::-moz-scrollbar-track{
+	background-color: blue;
+};
