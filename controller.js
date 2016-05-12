@@ -64,6 +64,8 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
                         }
                       }
                       $scope.recettesChoisi = recettesChoisi;
+                      console.log(recettesChoisi[0].imageAliment);
+                      $scope.imageAliment = recettesChoisi[0].imageAliment;
 
                   });//fin http pour mon fichier json
 
