@@ -7,6 +7,8 @@ app.config(['$routeProvider',function($routeProvider){
     templateUrl:'produit.html'
   }).when('/recipe',{
     templateUrl:'recipe.html'
+  }).when('/notFound',{
+    templateUrl:'notFound.html'
   }).otherwise({
     redirectTo:'/'
   });
@@ -18,7 +20,9 @@ app.config(['$routeProvider',function($routeProvider){
 app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$location) {
 
   $scope.rechercherProduit = function(maRoute,codeProduit){
-  // console.log(codeProduit);
+ 
+   
+
   $location.path(maRoute);
   var monProduit;
   var monCodeProduit = codeProduit;
@@ -72,6 +76,11 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
 
       });//fin http pour l'API openfoodfacts
 
+      if(codeProduit.length != 13){
+
+      $location.path("/notFound");
+
+   }
 
   };//fin de la fonction de rechercherProduit sur click
 //Début de la récupération des recettes :

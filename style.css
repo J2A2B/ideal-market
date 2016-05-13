@@ -47,8 +47,12 @@ color: white;
 	padding: 10px 25px 10px 5px;
 	font-size: 15px;
 }
-
+.notfound{
+	margin: 15px 0px 0px 50px;
+	color :#EE5926;
+}
 p{color: white;}
+
 /*partie jean*/
 
 p, h2, h1{
