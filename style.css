@@ -176,8 +176,22 @@ aux dimensions d'un iphone histoire de ne pas
 	background-image: url('halftone.png'),linear-gradient(#fcfbf3,#fcfbf3);
 
 }
-
-
+nav {
+	position: absolute;
+	width: 360px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	height: 50px;
+	background-color: #383433;
+}
+.container {
+	position: relative;
+}
+.wrap-container {
+	position: relative;
+	height: 100%;
+}
 .container-m#search {
 	background-color: #383433 !important;
 	background-image: none;
@@ -247,29 +261,20 @@ section#recipe {
 	font-weight: bolder;
 	margin-left: 0;
 }
-nav{
-	
-	
-	position: fixed;
-	width: 360px;
-	background-color: #383433;
-	height: 50px;
-	bottom: 89px;
-}
 
 
 .menu_left {
 	position: relative;
 	left: 10px;
 	top: 10px;
-	height: 30px;	
+	height: 30px;
 	width: 30px;
 }
 .menu_right {
 	position: relative;
 	top: 10px;
 	left:285px;
-	height: 30px;	
+	height: 30px;
 	width: 30px;
 }
 
