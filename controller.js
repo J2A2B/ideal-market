@@ -7,6 +7,8 @@ app.config(['$routeProvider',function($routeProvider){
     templateUrl:'produit.html'
   }).when('/recipe',{
     templateUrl:'recipe.html'
+  }).when('/notFound',{
+    templateUrl:'notFound.html'
   }).otherwise({
     redirectTo:'/'
   });
@@ -18,7 +20,9 @@ app.config(['$routeProvider',function($routeProvider){
 app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$location) {
 
   $scope.rechercherProduit = function(maRoute,codeProduit){
-  console.log(codeProduit);
+ 
+   
+
   $location.path(maRoute);
   var monProduit;
   var monCodeProduit = codeProduit;
@@ -30,7 +34,7 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
               //affichage de la liste de la desc.
               //console.log(response.data.product._keywords);
               var descriptionAliment = response.data.product._keywords;
-              console.log(descriptionAliment)
+              // console.log(descriptionAliment)
 
               //parcour de la description si on trouve des recette avec l'aliment selectionné.
               for(var aliment in descriptionAliment){
@@ -43,9 +47,9 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
               }
 
               //affichage de mon produit .
-              console.log(monProduit);
+              // console.log(monProduit);
               $scope.produit = response.data;
-                console.log($scope.produit)
+                // console.log($scope.produit)
                 //http pour parcontre le json avec les menus
                   $http.get('recettes.json').then(function(responseJson){
                       //liste toutes recettes
@@ -59,12 +63,12 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
                       {
                         if(monProduit == listeDesRecettes[recette].aliment)
                         {
-                        console.log(listeDesRecettes[recette]);
+                        // console.log(listeDesRecettes[recette]);
                         recettesChoisi.push(listeDesRecettes[recette]);
                         }
                       }
                       $scope.recettesChoisi = recettesChoisi;
-                      console.log(recettesChoisi[0].imageAliment);
+                      // console.log(recettesChoisi[0].imageAliment);
                       $scope.imageAliment = recettesChoisi[0].imageAliment;
 
                   });//fin http pour mon fichier json
@@ -72,6 +76,11 @@ app.controller('MainCtrl',['$scope','$http','$location',function($scope, $http,$
 
       });//fin http pour l'API openfoodfacts
 
+      if(codeProduit.length != 13){
+
+      $location.path("/notFound");
+
+   }
 
   };//fin de la fonction de rechercherProduit sur click
 //Début de la récupération des recettes :
@@ -90,17 +99,38 @@ $http.get('recettes.json')
  // cette fonction récupère l'objet sur laquelle elle est appeléé
 
 $scope.goToRecipe = function(recetteDeFin){
-  console.log(recetteDeFin.nom);
+  // console.log(recetteDeFin.nom);
+  console.log(recetteDeFin);
   $scope.imgRecette = recetteDeFin.image;
   $scope.nomRecette = recetteDeFin.nom;
   //Initialisation du tableau qui récupère le tableau compris dans l'objet
   $scope.recetteaAfficher = [];
   $scope.recetteaAfficher.push(recetteDeFin.ingredients);
+  //Ajout des éttaaaaaaapes
   $scope.etapesaAfficher = [];
   $scope.etapesaAfficher.push(recetteDeFin.preparation);
-
-
+  // console.log(recetteDeFin.preparation.length);
+ //numerotation des etapes
+  // $scope.etapesNumber = recetteDeFin.preparation.length;
   $location.path('/recipe')
 
 }
+
+$scope.back = function(){
+   $scope.chemin = $location.$$url;
+  if ($scope.chemin == "/produit") {
+      $location.path("/search");
+    }else{
+      $location.path("/produit");
+    }
+
+ 
+console.log($location.$$url)
+}
+$scope.backScan = function(){
+
+  $location.path("/");
+
+}
+
  }]); //fin controller

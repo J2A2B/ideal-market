@@ -1,0 +1,13 @@
+<section class="container-m" id="search">
+
+	<div class="searchContainer">
+		<div class="scan"><input class='screen' accept="image/*;capture=camera" type="file"><p>Scan</p></div>
+		<div class="recherche">
+			<form ng-submit="rechercherProduit('/produit',codeProduit)">
+				<input type="text" ng-model="codeProduit" placeholder="Search a product">
+			</form>
+			<div class="notfound">Produit introuvable.</div>
+		</div>
+	</div>
+
+</section>

@@ -1,8 +1,8 @@
 /*partie walid*/
 body{
-	height: 100%;
+	height: 640px;
 	width:100%;
-	background-color: #302625;
+	background-color: #a7a6a4;
 }
 *{
 	box-sizing: border-box;
@@ -36,17 +36,23 @@ body{
 	line-height: 200px;
 	font-size: 32px;
 }
-.scan p { margin: -200px; }
+.scan p {
+color: white;
+ margin: -200px; }
 
 .recherche input {
-	background-color: rgba(48, 38, 37, 0.16);
+	background-color: white;
 	color: #888;
 	border: 1px solid #888;
 	padding: 10px 25px 10px 5px;
 	font-size: 15px;
 }
-
+.notfound{
+	margin: 15px 0px 0px 50px;
+	color :#EE5926;
+}
 p{color: white;}
+
 /*partie jean*/
 
 p, h2, h1{
@@ -58,7 +64,6 @@ section{
 	display: flex;
 	flex-direction: column;
 	background-color: #fcfbf3;
-	height: 640px;
 	position: relative;
 }
 
@@ -69,7 +74,7 @@ section{
 	}
 
 			.img_product{
-				
+
 				background-size: cover;
 				height: 105px;
 				width: 40%;
@@ -162,32 +167,23 @@ section{
 aux dimensions d'un iphone histoire de ne pas
 être forcer par l'utilisation de la vue adaptive sur firefox*/
 .container-m {
+	overflow-y: scroll;
+	overflow-x:hidden;
 	height: 640px;
 	width: 360px !important;
 	margin: 40px auto;
 	color: #302625 !important;
 	background-image: url('halftone.png'),linear-gradient(#fcfbf3,#fcfbf3);
-	overflow: hidden;
-}
-#search {
+
 }
 
-section#produit > a{
-	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	margin: 0 auto;
-	padding: 15px 25px;
-	background-color: #EE5926;
-	border-radius: 2px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	margin-top: 15px;
-	transition: box-shadow 0.3s ease;
-}section#produit > a:hover {
 
-	box-shadow: 0 0 5px #EE5926;
+.container-m#search {
+	background-color: #383433 !important;
+	background-image: none;
 }
+
+
 .recipe {
 	transition: all 0.2s ease-in-out;
 }
@@ -214,8 +210,8 @@ section#recipe ul {
 	margin: 0;
 	padding: 0;
 	padding: 20px;
-
 }
+
 section#recipe li {
 	line-height: 1.5;
 	font-size: 12px;
@@ -225,11 +221,23 @@ section#recipe {
 	position: relative;
 }
 .header-recipe  {
-	height: 200px;
+	height: 200px !important;
 	background-color: red;
-	position: relative;
+	position: absolute;
+	left: 0; right: 0; top: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+}
+#name-recipe {
+	padding-top:  200px;
+}
+#separation{
+	width: 250px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	border-top: solid #383433 0.5px;
 }
 
 #name-recipe {
@@ -239,3 +247,35 @@ section#recipe {
 	font-weight: bolder;
 	margin-left: 0;
 }
+nav{
+	
+	
+	position: fixed;
+	width: 360px;
+	background-color: #383433;
+	height: 50px;
+	bottom: 89px;
+}
+
+
+.menu_left {
+	position: relative;
+	left: 10px;
+	top: 10px;
+	height: 30px;	
+	width: 30px;
+}
+.menu_right {
+	position: relative;
+	top: 10px;
+	left:285px;
+	height: 30px;	
+	width: 30px;
+}
+
+.container-m::-moz-scrollbar-thumb{
+	background-color: red;
+}
+.container-m::-moz-scrollbar-track{
+	background-color: blue;
+};
