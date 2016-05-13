@@ -48,8 +48,9 @@ color: white;
 	font-size: 15px;
 }
 .notfound{
-	margin: 15px 0px 0px 50px;
+	margin-top: 20px;
 	color :#EE5926;
+	text-align: center;
 }
 p{color: white;}
 
@@ -175,6 +176,10 @@ aux dimensions d'un iphone histoire de ne pas
 	color: #302625 !important;
 	background-image: url('halftone.png'),linear-gradient(#fcfbf3,#fcfbf3);
 
+}
+.container-m#search {
+	position: relative;
+	z-index: 9999;
 }
 nav {
 	position: absolute;
